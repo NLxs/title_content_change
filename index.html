@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>对象的分类</title>
+  </head>
+  <body>
+    <script>
+      // 实现离开当前标签改变标签的内容
+      let title = document.title;
+      window.addEventListener("blur", () => {
+        document.title = "我会等你回来的~";
+      });
+      window.addEventListener("focus", () => {
+        document.title = title;
+      });
+    </script>
+  </body>
+</html>
